@@ -1,0 +1,110 @@
+/*-----------index page---------------------------------------*/
+
+/* 'Open Sans' font from Google Fonts */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+  background: url("images/back3.jpg");
+  background-position:fixed;
+  background-size:100% 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.login {
+  margin-top:auto;
+  width: 400px;
+  margin: 16px auto;
+  font-size: 16px;
+  border-color:#0A86C9;
+  border:10px;
+}
+
+.login h5 {
+	width: 300px;
+	margin-right:auto;
+	margin-left:auto;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* The triangle form is achieved by a CSS hack */
+.login-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: #007FFF;
+}
+
+.login-header {
+  background: #0A86C9; /*login color*/
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.login-container {
+  background: rgba(0,0,0,0.5);
+  padding: 12px;
+}
+
+/* Every row inside .login-container is defined with p tags */
+.login p {
+  padding: 12px;
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+  background-color:rgba(0,0,0,0.4);
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  background: #007FFF;
+  border-color: #138;
+  color: #fff;
+}
+
+/* Text fields' focus effect */
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border-color: #150;
+}
+
+.login input[type="submit"] {
+  background: #660000;
+  font-size:17px;
+  font-family:"Arial Black", Gadget, sans-serif;
+  border-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+  background: #990000;
+  text-align:center;
+  color:#ffffff;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+}
+
+/* Buttons' focus effect */
+.login input[type="submit"]:focus {
+  border-color: #05a;
+}

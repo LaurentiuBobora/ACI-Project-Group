@@ -1,0 +1,42 @@
+<?php 
+	$page = $_GET['page'];	/* gets the variable $page */
+	if (!empty($page)) {
+		include($page);
+	} 	/* if $page has a value, include it */
+	else {
+		include('page1.php');
+	} 	/* otherwise, include the default page */
+
+echo '<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+<body>
+
+<div id="main-wrap"> 
+<div id="sidebar">
+ 
+<ul>
+<li><a href="CreateAccount.html" >Create Account</a></li>
+<li><a href="AddQuestion.html" >Add Question</a></li>
+<li><a href="EditQuestion.html" >Modify Question</a></li>
+<li><a href="AddUser.html" >Add User</a></li>
+<li><a href="AssignDetails.html" >Assign Details</a></li>
+
+</ul>
+ 
+</div>
+<div id="content-wrap">
+<h1>This is content</h1>
+
+</div>
+ </div>
+</body>
+</html>
+'>

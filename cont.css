@@ -1,0 +1,197 @@
+
+
+
+
+/* 'Open Sans' font from Google Fonts */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+
+
+body {
+
+  background: url("images/back3.jpg");
+  
+  background-color:rgba(0,0,0,0.5);
+
+  background-position:fixed;
+
+  background-size:100% 100%;
+
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+
+
+.sign-in {
+
+  width: 400px;
+
+  margin: 16px auto;
+
+  font-size: 16px;
+
+}
+
+
+
+/* Reset top and bottom margins from certain elements */
+
+.sign-in-header,
+
+.sign-in p {
+
+  margin-top: 0;
+
+  margin-bottom: 0;
+
+}
+
+
+
+/* The triangle form is achieved by a CSS hack */
+
+.sign-in-triangle {
+
+  width: 0;
+
+  margin-right: auto;
+
+  margin-left: auto;
+
+  border: 12px solid transparent;
+
+  border-bottom-color: #007FFF;
+
+}
+
+
+
+.sign-in-header {
+
+  background: #007FFF; /*sign-in color*/
+
+  padding: 20px;
+
+  font-size: 1.4em;
+
+  font-weight: normal;
+
+  text-align: center;
+
+  text-transform: uppercase;
+
+  color: #fff;
+
+}
+
+
+
+.sign-in-container {
+
+  background: #fff;
+
+  padding: 12px;
+
+}
+
+
+
+/* Every row inside .sign-in-container is defined with p tags */
+
+.sign-in p {
+
+  padding: 12px;
+
+}
+
+
+
+.sign-in input, select, option{
+
+  box-sizing: border-box;
+
+  display: block;
+
+  width: 100%;
+
+  border-width: 1px;
+
+  border-style: solid;
+
+  padding: 16px;
+
+  outline: 0;
+
+  font-family: inherit;
+
+  font-size: 0.95em;
+
+}
+
+
+
+.sign-in input[type="text"],
+
+.sign-in input[type="email"],
+
+.sign-in input[type="password"],
+
+.sign-in input[type="file"],
+
+.sign-in option[type="text"],
+
+.sign-in select {
+
+  background: #007FFF;
+
+  border-color: #138;
+
+  color: #fff;
+
+}
+
+
+
+/* Text fields' focus effect */
+
+.sign-in input[type="email"]:focus,
+
+.sign-in input[type="password"]:focus {
+
+  border-color: #150;
+
+}
+
+
+
+.sign-in input[type="submit"] {
+
+  background: #004F4F;
+
+  border-color: transparent;
+
+  color: #fff;
+
+  cursor: pointer;
+
+}
+
+
+
+.sign-in input[type="submit"]:hover {
+
+  background: #FF0000;
+
+}
+
+
+
+/* Buttons' focus effect */
+
+.sign-in input[type="submit"]:focus {
+
+  border-color: #05a;
+
+}

@@ -1,0 +1,81 @@
+
+@import "http://fonts.googleapis.com/css?family=Arvo";
+/* Above line is used for online google font */
+
+body {
+  background: url("images/back2.jpg");
+  background-position: fixed;
+  background-size: 100% 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.boxed{
+	border: 1px solid black;
+	background-color: #007FFF;
+	margin-top: 5%;
+	margin-left: 17%;
+	margin-right: 17%;
+}
+
+.forms input[type="checkbox"],
+.forms input[type="radio"]{
+	margin-left: 5%;
+	size: 500px;
+	width: 30px;
+	size: 30px;
+}
+
+.choose{
+	font-size: 17px;
+	font-weight: 100;
+	color: #ffffff;
+}
+
+textarea{
+	border: 1 solid black;
+	margin-left: 30px;
+}
+
+a {
+	color:#990000;
+	text-decoration:none;
+}
+
+h3 {
+text-align: center;
+color: #004F4F;
+}
+
+div#main {
+width:500px;
+height:800px;
+margin:20px auto;
+font-family:'Arvo',serif
+}
+
+div#first {
+width:350px;
+height:415px;
+padding:0 45px 20px;
+border:1px dotted #004F4F;
+float:left
+}
+
+select:hover {
+color:#004F4F;
+}
+
+.submit {
+width: 130px;
+height: 30px;
+color: #fff;
+margin-top: 10px;
+margin-left: 5%;
+background-color: rgba(0,0,0,0.5);
+font-size: 15px;
+font-weight:100;
+-webkit-appearance:none;
+box-shadow:inset 0 0 10px 0 rgba(0,0,0,0.6);
+outline:none;
+text-align:center;
+}

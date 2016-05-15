@@ -1,0 +1,60 @@
+<html>
+<head>
+	
+</head>
+	
+<body>
+	<?php
+		mysql_connect("localhost", "root", "");
+		mysql_select_db("metinpla_aci");
+		
+		#$type = mysql_query("SELECT answer_type FROM question");
+		$sql = mysql_query("SELECT * FROM question ORDER BY id ASC");
+		
+		
+		$id = 'id';
+		$answer_type = 'answer_type';
+		$answer1 = 'answer1';
+		$answer2 = 'answer2';
+		$answer3 = 'answer3';
+		$answer4 = 'answer4';
+		$answer5 = 'answer5';
+		$rows = mysql_fetch_assoc($sql);
+		
+		echo 'ID: ' . $rows[$id] . <br/> . "Comment: " . $rows[$comments];
+		
+		if($answer_type == 'single'){ #radio
+			
+		
+		
+		}
+		
+		else if($answer_type == 'multiple'){ #checkbox
+		
+			while($rows = mysql_fetch_assoc($sql)){
+				echo'<div class="boxed">       
+					 <h3>Cum se definste un buton in Java Swing?</h3>
+						<form class="forms">
+							<input type="checkbox" name="raspuns1" value="Bike"><span class="choose">JButton</span></input><br>
+							<input type="checkbox" name="raspuns2" value="Car"><span class="choose">JTrotineta</span></input><br>
+							<input type="checkbox" name="raspuns3" value="Car"><span class="choose">Button</span></input><br>
+							<input type="checkbox" name="raspuns4" value="Car"><span class="choose">new Button()</span></input><br>
+							<input type="checkbox" name="raspuns5" value="Car"><span class="choose">InputButton</span></input><br>
+							<input type="checkbox" name="raspuns6" value="Car"><span class="choose">FFFFFFFFFF</span></input><br>
+							<input type="submit" class="submit" value="Submit Answer">
+						</form>
+					</div>';
+			}
+		
+		}
+		
+		else{ #text
+			
+		}
+		
+		
+		
+		
+	?>
+</body>
+</html>
